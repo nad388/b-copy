@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+body {
+	background-color: #f3f3f4;
+}
+
+.container {
+	max-width: 1140px;
+}
