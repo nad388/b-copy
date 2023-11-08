@@ -7,6 +7,7 @@ export default {
 			mainGray: '#333',
 			mainBlue: '#2761d1',
 			mainTextColor: '#1d1c28',
+			mainBlack: '#343a40',
 		},
 		extend: {},
 	},
