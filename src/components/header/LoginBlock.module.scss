@@ -1,0 +1,8 @@
+.pay {
+	@apply flex items-center mr-3 uppercase  text-[0.9rem] transition-[0.5s];
+
+	background: linear-gradient(#2761d1 0 0) 0 100% / var(--d, 0) 1px no-repeat;
+	&:hover {
+		--d: 100%;
+	}
+}

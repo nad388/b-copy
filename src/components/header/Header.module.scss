@@ -1,0 +1,7 @@
+.menu {
+	@apply mr-[10px] text-[0.85rem] font-normal  px-0 py-[3px] uppercase transition-[0.5s];
+	background: linear-gradient(#2761d1 0 0) 0 100% / var(--d, 0) 1px no-repeat;
+	&:hover {
+		--d: 100%;
+	}
+}
