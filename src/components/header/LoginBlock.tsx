@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import arrowIcon from '../../assets/icons/arrow.svg'
 import payIcon from '../../assets/icons/pay.svg'
 import phoneIcon from '../../assets/icons/phone.svg'
+import DropdownMenu from '../dropdownMenu/DropdownMenu'
 import styles from './LoginBlock.module.scss'
 
 const LoginBlock: FC = () => {
@@ -17,13 +18,21 @@ const LoginBlock: FC = () => {
 				</div>
 			</div>
 			<div className='mr-3'>
-				<div className='dropdown'></div>
+				<div className='dropdown'>
+					<DropdownMenu />
+				</div>
 				<div className=''></div>
-				<div className='flex items-center'>
+				<Link
+					to='#'
+					className='flex items-center'
+					onClick={() => {
+						console.log('click')
+					}}
+				>
 					<img src={phoneIcon} />
 					<span className='mx-1 text-[0.9rem]'>8 (800) 700-06-08</span>
 					<img src={arrowIcon} />
-				</div>
+				</Link>
 			</div>
 			<div className='flex'>
 				<Link
