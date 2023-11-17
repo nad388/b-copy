@@ -1,12 +1,24 @@
-import { FC } from 'react'
+import { FC, MouseEventHandler, useState } from 'react'
 import { Link } from 'react-router-dom'
 import arrowIcon from '../../assets/icons/arrow.svg'
 import payIcon from '../../assets/icons/pay.svg'
 import phoneIcon from '../../assets/icons/phone.svg'
-import DropdownMenu from '../dropdownMenu/DropdownMenu'
+
+import ModalMenu from '../modalMenu/ModalMenu'
 import styles from './LoginBlock.module.scss'
 
 const LoginBlock: FC = () => {
+	const [showModal, setShowModal] = useState<boolean>(false)
+
+	const handleLinkClick: MouseEventHandler<HTMLAnchorElement> = event => {
+		event.preventDefault()
+		setShowModal(true)
+	}
+
+	const closeModal = () => {
+		setShowModal(false)
+	}
+
 	return (
 		<div className='flex items-center'>
 			<div>
@@ -18,21 +30,16 @@ const LoginBlock: FC = () => {
 				</div>
 			</div>
 			<div className='mr-3'>
-				<div className='dropdown'>
-					<DropdownMenu />
-				</div>
 				<div className=''></div>
-				<Link
-					to='#'
-					className='flex items-center'
-					onClick={() => {
-						console.log('click')
-					}}
-				>
+				<Link to='#' className='flex items-center' onClick={handleLinkClick}>
 					<img src={phoneIcon} />
 					<span className='mx-1 text-[0.9rem]'>8 (800) 700-06-08</span>
 					<img src={arrowIcon} />
 				</Link>
+				<div className='dropdown'>
+					<ModalMenu active={showModal} onClose={closeModal} />
+					{/* <Modal active={showModal} onClose={closeModal} /> */}
+				</div>
 			</div>
 			<div className='flex'>
 				<Link

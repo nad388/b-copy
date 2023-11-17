@@ -7,6 +7,8 @@ import ruFlag from '../../assets/otherIcons/ru.svg'
 import spbFlag from '../../assets/otherIcons/spb.svg'
 import ukrFlag from '../../assets/otherIcons/ukraine.svg'
 
+import styles from './ModalItem.module.scss'
+
 interface IPhone {
 	flag: string
 	country: string
@@ -26,13 +28,13 @@ const phones: IPhone[] = [
 	{ flag: kzFlag, country: 'Казахстан', phoneNumber: '+7 (727) 313-24-02' },
 ]
 
-const DropdownItem: FC = () => {
+const ModalItem: FC = () => {
 	return (
 		<div>
 			{phones.map(item => (
 				<div key={item.flag}>
 					<Link to={item.phoneNumber}>
-						<div>
+						<div className={styles.dropdown}>
 							<div>
 								<div>
 									<img src={item.flag} alt='' />
@@ -48,4 +50,4 @@ const DropdownItem: FC = () => {
 	)
 }
 
-export default DropdownItem
+export default ModalItem
