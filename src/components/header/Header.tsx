@@ -6,9 +6,9 @@ import Menu from './Menu'
 
 const Header: FC = () => {
 	return (
-		<div className='p-[1rem] '>
-			<div className='flex items-center'>
-				<div className='flex row items-center justify-between'>
+		<div className='p-[1rem]'>
+			<div className='flex'>
+				<div className='flex items-center m-0'>
 					<Link to='/'>
 						<img src={mainLogo} alt='logo' className='pr-10' />
 					</Link>

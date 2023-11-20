@@ -20,7 +20,7 @@ const LoginBlock: FC = () => {
 	}
 
 	return (
-		<div className='flex items-center'>
+		<div className='flex items-center mr-0'>
 			<div>
 				<div>
 					<Link className={styles.pay} to='#'>
