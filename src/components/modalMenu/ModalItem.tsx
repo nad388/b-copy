@@ -6,7 +6,6 @@ import mskFlag from '../../assets/otherIcons/msk.svg'
 import ruFlag from '../../assets/otherIcons/ru.svg'
 import spbFlag from '../../assets/otherIcons/spb.svg'
 import ukrFlag from '../../assets/otherIcons/ukraine.svg'
-
 import styles from './ModalItem.module.scss'
 
 interface IPhone {
@@ -35,13 +34,13 @@ const ModalItem: FC = () => {
 				<div key={item.flag}>
 					<Link to={item.phoneNumber}>
 						<div className={styles.dropdown}>
-							<div>
+							<div className='ml-0'>
 								<div>
 									<img src={item.flag} alt='' />
 								</div>
 							</div>
-							<div>{item.country}</div>
-							<div>{item.phoneNumber}</div>
+							<div className='ml-0'>{item.country}</div>
+							<div className='mr-0'>{item.phoneNumber}</div>
 						</div>
 					</Link>
 				</div>

@@ -12,7 +12,7 @@ const LoginBlock: FC = () => {
 
 	const handleLinkClick: MouseEventHandler<HTMLAnchorElement> = event => {
 		event.preventDefault()
-		setShowModal(true)
+		setShowModal(!showModal)
 	}
 
 	const closeModal = () => {
