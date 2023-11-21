@@ -9,5 +9,18 @@
 		font-weight: 400;
 		text-align: center;
 		border: 1px solid white;
+		transition: color 0.15s ease-in-out;
 	}
+}
+
+.servers:hover,
+.servers:hover .btn {
+	background: rgba(37, 41, 56, 1);
+	background: radial-gradient(
+		at left bottom,
+		rgba(37, 41, 56, 1),
+		rgba(47, 58, 91, 1)
+	);
+	color: white;
+	border-color: white;
 }

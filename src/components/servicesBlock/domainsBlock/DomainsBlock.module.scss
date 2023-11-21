@@ -9,5 +9,53 @@
 		font-weight: 400;
 		text-align: center;
 		border: 1px solid white;
+		transition: color 0.15s ease-in-out;
 	}
+	.searchInput {
+		display: block;
+		width: 100%;
+		height: calc(1.5em + 0.75rem + 2px);
+		padding: 0.5rem calc(34px + 0.5rem) 0.5rem 0.5rem;
+		font-size: 1.125rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #495057;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid #ced4da;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	.inputBtn {
+		position: absolute;
+		font-size: 1.125rem;
+		padding: 0.25rem 0.4375rem;
+		cursor: pointer;
+		right: 0.25rem;
+		top: 0.25rem;
+		bottom: 0.25rem;
+
+		color: white;
+		@apply bg-mainBlue border-[mainBlue];
+		.inputBtnSvg {
+			display: block;
+			/* width: 18px;
+			height: 18px; */
+		}
+	}
+
+	svg {
+		overflow: hidden;
+	}
+}
+
+.domains:hover,
+.domains:hover .btn {
+	background: rgba(51, 13, 89, 1);
+	background: radial-gradient(
+		at left bottom,
+		rgba(51, 13, 89, 1),
+		rgba(111, 59, 160, 1)
+	);
+	color: white;
+	border-color: white;
 }

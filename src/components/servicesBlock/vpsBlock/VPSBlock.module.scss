@@ -9,5 +9,18 @@
 		font-weight: 400;
 		text-align: center;
 		border: 1px solid white;
+		transition: color 0.15s ease-in-out;
 	}
+}
+
+.vps:hover,
+.vps:hover .btn {
+	background: rgba(33, 112, 23, 1);
+	background: radial-gradient(
+		at left bottom,
+		rgba(33, 112, 23, 1),
+		rgba(60, 136, 49, 1)
+	);
+	color: white;
+	border-color: white;
 }

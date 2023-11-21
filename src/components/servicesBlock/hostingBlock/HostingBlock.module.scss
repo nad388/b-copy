@@ -9,10 +9,18 @@
 		font-weight: 400;
 		text-align: center;
 		border: 1px solid white;
-	}
-	&:hover {
-		background-color: #1b4391 !important;
-		color: white;
-		border-color: white;
+		transition: color 0.15s ease-in-out;
 	}
 }
+.hosting:hover,
+.hosting:hover .btn {
+	background: rgba(4, 37, 137, 1);
+	background: radial-gradient(
+		at left bottom,
+		rgba(4, 37, 137, 1),
+		rgba(23, 74, 192, 1)
+	);
+	color: white;
+	border-color: white;
+}
+
