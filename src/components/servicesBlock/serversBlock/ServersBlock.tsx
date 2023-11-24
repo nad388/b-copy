@@ -13,7 +13,7 @@ const ServersBlock: FC = () => {
 					<span className='font-medium ml-0 mr-0'>9300 ₽</span>
 				</h5>
 				<div>
-					<p>
+					<p className={styles.serversText}>
 						Серверные системы любой мощности и инфраструктура для проектов
 						с особыми требованиями
 					</p>

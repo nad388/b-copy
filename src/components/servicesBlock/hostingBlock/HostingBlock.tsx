@@ -12,7 +12,7 @@ const HostingBlock: FC = () => {
 					<span className='font-medium ml-0 mr-0'> 320 ₽</span>
 				</h5>
 				<div>
-					<p>
+					<p className={styles.hostingText}>
 						Готовое решение для размещения интернет-проектов без необходимости
 						администрировать сервер
 					</p>

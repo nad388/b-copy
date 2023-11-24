@@ -2,16 +2,11 @@
 	padding-top: 20px;
 	padding-left: 16px;
 	padding-right: 16px;
-	min-height: 488px;
+	/* min-height: 488px;
+	padding-bottom: 16px; */
 
 	> span {
 		white-space: normal;
-	}
-
-	p {
-		font-size: 1rem;
-		line-height: 1.2;
-		font-weight: 400;
 	}
 
 	h5 {
@@ -23,16 +18,15 @@
 
 	@apply text-mainTextColor;
 }
-.linkGroup {
-	display: flex;
-	justify-content: flex-start;
+/* .linkGroup { */
+/* display: flex; */
 
-	/* &:hover {
+/* &:hover {
 		background-color: #1b4391 !important;
 		color: white;
 		border-color: white;
 	} */
-}
+/* } */
 .servicesBlock {
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -41,4 +35,7 @@
 .gridBlock {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	/* a {
+		margin-bottom: 0.5rem;
+	} */
 }

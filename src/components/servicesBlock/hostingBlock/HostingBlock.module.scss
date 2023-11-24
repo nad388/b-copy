@@ -12,6 +12,11 @@
 		transition: color 0.15s ease-in-out;
 	}
 }
+.hostingText {
+	font-size: 1rem;
+	line-height: 1.2;
+	font-weight: 400;
+}
 .hosting:hover,
 .hosting:hover .btn {
 	background: rgba(4, 37, 137, 1);
@@ -23,4 +28,3 @@
 	color: white;
 	border-color: white;
 }
-

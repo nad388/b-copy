@@ -13,7 +13,7 @@ const VPSBlock: FC = () => {
 					<span className='font-medium ml-0 mr-0'>210 ₽</span>
 				</h5>
 				<div>
-					<p>
+					<p className={styles.vpsText}>
 						Производительные виртуальные серверы для любых задач на основе
 						последнего поколения процессоров и бесплатными бекапами
 					</p>

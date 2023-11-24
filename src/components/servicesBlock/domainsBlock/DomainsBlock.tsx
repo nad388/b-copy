@@ -8,17 +8,17 @@ interface IZone {
 }
 
 const zones: IZone[] = [
-	{ title: '.RU', price: 179 },
-	{ title: '.COM', price: 1300 },
-	{ title: '.ONLINE', price: 600 },
-	{ title: '.SPACE', price: 220 },
+	{ title: '.ru', price: 179 },
+	{ title: '.com', price: 1300 },
+	{ title: '.online', price: 600 },
+	{ title: '.space', price: 220 },
 ]
 
 const DomainsBlock: FC = () => {
 	return (
 		<div className={styles.domains}>
 			<div>
-				<h5 className={styles.h5}>
+				<h5>
 					<span className='font-bold  mr-0.5 ml-0'>—</span>
 					Домены
 				</h5>
@@ -46,11 +46,11 @@ const DomainsBlock: FC = () => {
 							</button>
 						</form>
 					</div>
-					<div className='flex'>
+					<div className={styles.zones}>
 						{zones.map(zone => (
-							<div key={zone.title}>
-								<h5>{zone.title}</h5>
-								<div>
+							<div key={zone.title} className={styles.zone}>
+								<h5 className={styles.zoneTitle}>{zone.title}</h5>
+								<div className={styles.zoneText}>
 									<p>
 										{zone.price} ₽ <span>в год</span>
 									</p>

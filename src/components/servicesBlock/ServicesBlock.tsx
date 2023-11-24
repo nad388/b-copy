@@ -14,19 +14,16 @@ const ServiceBlock: FC = () => {
 					<div className={styles.containerBlock}>
 						<div className={styles.servicesBlock}>
 							<div className={styles.gridBlock}>
-								<Link to='#' className={styles.linkGroup}>
+								<Link to='#'>
 									<HostingBlock />
 								</Link>
-
-								<Link to='#' className={styles.linkGroup}>
+								<Link to='#'>
 									<VPSBlock />
 								</Link>
-
-								<Link to='#' className={styles.linkGroup}>
+								<Link to='#'>
 									<ServersBlock />
 								</Link>
-
-								<Link to='#' className={styles.linkGroup}>
+								<Link to='#' className='ml-0 mr-0 mb-3'>
 									<DomainsBlock />
 								</Link>
 							</div>
