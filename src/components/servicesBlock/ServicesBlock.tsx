@@ -23,7 +23,7 @@ const ServiceBlock: FC = () => {
 								<Link to='#'>
 									<ServersBlock />
 								</Link>
-								<Link to='#' className='ml-0 mr-0 mb-3'>
+								<Link to='#' className='ml-0 mr-0'>
 									<DomainsBlock />
 								</Link>
 							</div>
