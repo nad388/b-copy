@@ -1,4 +1,5 @@
 import Header from './components/header/Header'
+import PageBody from './components/pageBody/PageBody'
 import ServiceBlock from './components/servicesBlock/ServicesBlock'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 				<div className='container'>
 					<Header />
 					<ServiceBlock />
+					<PageBody />
 				</div>
 			</div>
 		</>
