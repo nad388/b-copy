@@ -9,6 +9,8 @@ function App() {
 				<div className='container'>
 					<Header />
 					<ServiceBlock />
+				</div>
+				<div className='bg-[#fff]'>
 					<PageBody />
 				</div>
 			</div>

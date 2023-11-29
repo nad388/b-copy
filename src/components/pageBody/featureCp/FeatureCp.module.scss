@@ -1,0 +1,54 @@
+.featureRow {
+	position: relative !important;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5.5rem;
+	margin-right: 0;
+	margin-left: 0;
+	flex-wrap: wrap;
+}
+.imgCol {
+	width: 600px;
+	height: 445px;
+	top: 0;
+	left: auto;
+	right: 0;
+	padding: 0;
+	position: absolute;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
+	background-image: url('../../../assets/images/time.png');
+}
+
+.titleCol {
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0;
+}
+
+.blockTitle {
+	font-size: 3.75rem;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+.smBlock {
+	display: block !important;
+}
+
+.textCol {
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0;
+	max-width: 48%;
+
+	> p {
+		word-wrap: break-word;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+}
