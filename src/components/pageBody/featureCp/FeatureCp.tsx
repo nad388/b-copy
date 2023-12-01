@@ -1,5 +1,6 @@
 import { FC } from 'react'
-
+import { Link } from 'react-router-dom'
+import { linksFeature } from './FeatureCPLinks.data'
 import styles from './FeatureCp.module.scss'
 
 const FeatureCp: FC = () => {
@@ -34,13 +35,17 @@ const FeatureCp: FC = () => {
 						</div>
 					</div>
 				</div>
-				<div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div className={styles.linksRow}>
+					{linksFeature.map(link => (
+						<div key={link.img} className={styles.mainLink}>
+							<Link to='#' className={styles.linksFlex}>
+								<span className='mr-3 ml-0'>
+									<img src={link.img} className={styles.svg} />
+								</span>
+								{link.title}
+							</Link>
+						</div>
+					))}
 				</div>
 				<div>
 					<div>

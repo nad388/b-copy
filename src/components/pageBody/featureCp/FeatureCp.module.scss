@@ -52,3 +52,42 @@
 		margin-bottom: 1.5rem;
 	}
 }
+
+.linksRow {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center;
+	align-items: center; */
+}
+
+.mainLink {
+	@apply mx-0;
+	width: 33.3%;
+}
+
+.linksFlex {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center;
+	align-items: center; */
+	padding: 1rem;
+	margin-left: -1rem;
+	/* margin-right: -1rem; */
+	font-size: 1.25rem;
+	line-height: 1.2;
+	height: 100%;
+	.svg {
+	}
+	&:hover {
+		background: rgba(4, 37, 137, 1);
+		background: radial-gradient(
+			at left bottom,
+			rgba(4, 37, 137, 1),
+			rgba(23, 74, 192, 1)
+		);
+		color: white;
+		border-color: white;
+	}
+
+	@apply text-mainBlue;
+}
